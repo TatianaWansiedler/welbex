@@ -1,0 +1,133 @@
+.page {
+  max-width: var(--main-page-size);
+  color: var(--light-text);
+  margin: 0 auto 70px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+.title {
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.title span {
+  font-weight: 900;
+  background: -webkit-linear-gradient(45deg, #fcb045, #ff3f78);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.info_text {
+  font-family: var(--font-montserrat);
+  font-size: 18px;
+  font-weight: 400;
+}
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-end;
+}
+.subtitle {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 500;
+}
+.subtitle span {
+  background: var(
+    --gradient,
+    linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+.presents {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 140px);
+}
+.btn {
+  width: 262px;
+  height: 61px;
+  background: #4077f3;
+  color: var(--light-text);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.presents_mob {
+  display: none;
+}
+
+@media (max-width: 320px) {
+  .page {
+    margin: 0;
+    padding: 40px 0 60px;
+    flex-direction: column;
+    background: radial-gradient(
+      304.35% 148.2% at 3.2% 3.49%,
+      rgba(255, 246, 233, 0.1) 0%,
+      rgba(26, 29, 35, 0.1) 26.62%,
+      rgba(26, 29, 35, 0.1) 52.1%,
+      rgba(26, 29, 35, 0.01) 70.17%,
+      rgba(26, 29, 35, 0) 100%
+    );
+    backdrop-filter: blur(7.5px);
+    position: relative;
+    overflow: hidden;
+
+  }
+  .titles_blok, .services{
+    max-width: var(--mobile-size);
+    margin: 0 auto;
+  }
+  .title {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  .services {
+    align-items: flex-start;
+    margin-top: 45px;
+  }
+  .subtitle {
+    text-align: left;
+  }
+  .btn {
+    display: none;
+  }
+  .presents {
+    display: none;
+  }
+  .presents_mob {
+    display: grid;
+    gap: 15px 10px;
+    grid-template-columns: 115px 141px;
+  }
+  .pres_item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .decor {
+    width: 10px;
+    height: 1px;
+    background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+  }
+  .pres_text {
+    font-family: var(--font-montserrat);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.65px;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,66 @@
+.shadow_red,
+.shadow_purple,
+.circle_red,
+.circle_purple {
+  display: none;
+}
+@media (max-width: 320px) {
+  .shadow_red {
+    display: block;
+    width: 211px;
+    height: 211px;
+    opacity: 0.5;
+    background: #961a1a;
+    filter: blur(160px);
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    left: -55px;
+  }
+  .shadow_purple {
+    display: block;
+    width: 259px;
+    height: 259px;
+    border-radius: 259px;
+    opacity: 0.5;
+    background: #833ab4;
+    filter: blur(160px);
+    position: absolute;
+    bottom: 79px;
+    right: -197px;
+  }
+  .circle_red {
+    display: block;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: radial-gradient(
+      82.3% 82.3% at 27.25% 26.5%,
+      rgba(255, 208, 208, 0.54) 0%,
+      rgba(212, 93, 93, 0.26) 59.67%,
+      rgba(167, 49, 49, 0.25) 78.59%,
+      rgba(130, 25, 25, 0.25) 100%
+    );
+    filter: blur(10px);
+    position: absolute;
+    bottom: -6px;
+    left: 29px;
+  }
+  .circle_purple {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: radial-gradient(
+      82.3% 82.3% at 27.25% 26.5%,
+      rgba(236, 208, 255, 0.64) 0%,
+      rgba(161, 93, 207, 0.24) 59.67%,
+      rgba(118, 49, 164, 0.21) 78.59%,
+      rgba(86, 24, 128, 0.23) 100%
+    );
+    filter: blur(10px);
+    position: absolute;
+    bottom: 169px;
+    right: -16px;
+  }
+}
